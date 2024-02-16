@@ -1,0 +1,29 @@
+.app_wrapper{
+    background: var(--main-color);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .hero-text-box{
+        h1 {
+            text-align: center;
+            margin: 0;
+            padding: 45px 0 5px;
+            font-size: 3em;
+        }
+        .hero-title {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+        
+    }
+    .hero-ps {
+        text-align: center;
+        margin: 15px 0;
+        font-size: 0.5em;
+    }
+    
+}
