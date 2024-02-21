@@ -20,7 +20,7 @@ function Sidebar(props) {
         <div className={`sidebar ${showMenu? '' : 'hidden'}`}>
             <div className={`sidebar-wrapper`}>
                 <img onClick={onClickShowMenuToggle} src={burger} className={`sidebar-burger ${showMenu ? 'hidden': ''}`} alt='' />
-                <img onClick={onClickToTheMainPage} src={logo} className={`sidebar-close-button ${showMenu ? '': 'hidden'}`} alt='' />
+                <img onClick={onClickShowMenuToggle} src={logo} className={`sidebar-close-button ${showMenu ? '': 'hidden'}`} alt='' />
                 <Menu setPage={props.setPage} setHideMenu={setHideMenu} />
             </div>
         </div>

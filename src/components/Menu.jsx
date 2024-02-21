@@ -2,16 +2,14 @@ import React from "react";
 function Menu(props) { 
 
     const onClickMenuItemHandler = (event) => {
-        props.setHideMenu();
-        
+    props.setHideMenu();
     const textInsideP = event.target.textContent;
-    console.log(textInsideP);
-  
-        props.setPage(textInsideP);
+    props.setPage(textInsideP);
     }
     return (
         <div className="menu-wrapper">
             <ul className="menu-list">
+                <li className="menu-item" onClick={onClickMenuItemHandler}>Main</li>
                 <li className="menu-item" onClick={onClickMenuItemHandler}>Quiz</li>
                 <li className="menu-item" onClick={onClickMenuItemHandler}>Counter</li>
                 <li className="menu-item" onClick={onClickMenuItemHandler}>Pointer</li>

@@ -2,6 +2,9 @@ import React, {useState} from "react";
 import Sidebar from "./Sidebar";
 import Counter from "./Counter";
 import MainPage from "./MainPage";
+import Quiz from "./Quiz";
+import Placeholder from "./Placeholder";
+import Pointer from "./Pointer";
 
 
 function Hero() {
@@ -11,9 +14,12 @@ function Hero() {
 
   return (
     <div className='app_wrapper'>
-      {page=='Main' ? <MainPage /> : ''}
       <Sidebar setPage={setPage} />
-      {page=='Counter'? <Counter />: '' }
+      {page=='Main' ? <MainPage /> : ''}
+      {page == 'Counter' ? <Counter /> : ''}
+      {page == 'Quiz' ? <Quiz /> : ''}
+      {page == 'Pointer' ? <Pointer /> : ''}
+      {page == 'Contact book' ? <Placeholder /> : ''}
     
   </div>
   );
