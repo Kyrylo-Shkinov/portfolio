@@ -4,7 +4,7 @@
     }
 
     to {
-        width: 100%;
+        width: calc(100% - 30px);
     }
 }
 
@@ -22,7 +22,7 @@
         .menu-item{
             font-size: 1rem;
             text-decoration: none;
-            margin: 7.5px 15px;
+            padding: 7.5px 15px;
             position: relative;
             &::after {
                     content: '';
@@ -31,7 +31,7 @@
                     height: 2px;
                     background: var(--accent-color);
                     position: absolute;
-                    right: 0;
+                    right: 15px;
                     transition: all .15s ease-in-out;
                 }
             
@@ -39,7 +39,7 @@
                     cursor: pointer;
             
                     &::after {
-                        width: 100%;
+                        width: calc(100% - 30px);
                         animation: showUnderLine .15s ease-in-out;
                     }
             
@@ -47,15 +47,16 @@
         }
     }
     .real_projects{
-        padding-right: 15px;
         text-align: end;
         align-self: flex-end;
         justify-self: flex-end;
         &_title{
             font-size: 1.1rem;
             font-weight: 600;
+            padding-right: 15px;
         }
         &_link{
+            padding: 7.5px 15px;
             font-size: .8rem;
             text-decoration: none;
             color: black;
@@ -67,14 +68,14 @@
                     height: 2px;
                     background: var(--accent-color);
                     position: absolute;
-                    right: 0;
+                    right: 15px;
                     transition: all .15s ease-in-out;
 
                 }
             &:hover{
                 cursor: pointer;
                 &::after{
-                    width: 100%;
+                    width: calc(100% - 30px);
                     animation: showUnderLine .15s ease-in-out;
                 }
                 

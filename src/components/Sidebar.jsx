@@ -8,10 +8,6 @@ function Sidebar(props) {
     const setHideMenu = () => {
         setShowMenu(false);
     }
-    const onClickToTheMainPage = () => {
-        setShowMenu(!showMenu);
-        props.setPage('Main');
-    }
     const onClickShowMenuToggle = () => {
         setShowMenu(!showMenu);
     }
@@ -21,7 +17,7 @@ function Sidebar(props) {
             <div className={`sidebar-wrapper`}>
                 <img onClick={onClickShowMenuToggle} src={burger} className={`sidebar-burger ${showMenu ? 'hidden': ''}`} alt='' />
                 <img onClick={onClickShowMenuToggle} src={logo} className={`sidebar-close-button ${showMenu ? '': 'hidden'}`} alt='' />
-                <Menu setPage={props.setPage} setHideMenu={setHideMenu} />
+                <Menu setPage={props.setPage} setAppState={props.setAppState} setHideMenu={setHideMenu} />
             </div>
         </div>
     );

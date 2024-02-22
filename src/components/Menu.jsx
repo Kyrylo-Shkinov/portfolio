@@ -2,9 +2,10 @@ import React from "react";
 function Menu(props) { 
 
     const onClickMenuItemHandler = (event) => {
-    props.setHideMenu();
-    const textInsideP = event.target.textContent;
-    props.setPage(textInsideP);
+        props.setHideMenu();
+        const textInsideP = event.target.textContent;
+        props.setPage(textInsideP);
+        props.setAppState(textInsideP);
     }
     return (
         <div className="menu-wrapper">

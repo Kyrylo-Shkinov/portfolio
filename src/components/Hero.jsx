@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Sidebar from "./Sidebar";
 import Counter from "./Counter";
 import MainPage from "./MainPage";
@@ -8,18 +8,26 @@ import Pointer from "./Pointer";
 
 
 function Hero() {
-  const [page, setPage] = useState('Main');
   
+  const [appState, setAppState] = useState(() => {
+        const storedState = localStorage.getItem('appState');
+        return storedState ? JSON.parse(storedState) : 'Main';
+    });
 
+    // Викликається при зміні стану та оновлює localStorage
+    useEffect(() => {
+        localStorage.setItem('appState', JSON.stringify(appState));
+    }, [appState]);
+    const [page, setPage] = useState(appState);
 
   return (
     <div className='app_wrapper'>
-      <Sidebar setPage={setPage} />
-      {page=='Main' ? <MainPage /> : ''}
-      {page == 'Counter' ? <Counter /> : ''}
-      {page == 'Quiz' ? <Quiz /> : ''}
-      {page == 'Pointer' ? <Pointer /> : ''}
-      {page == 'Contact book' ? <Placeholder /> : ''}
+      <Sidebar setPage={setPage} setAppState={setAppState}/>
+      {page==='Main' ? <MainPage /> : ''}
+      {page === 'Counter' ? <Counter /> : ''}
+      {page === 'Quiz' ? <Quiz /> : ''}
+      {page === 'Pointer' ? <Pointer /> : ''}
+      {page === 'Contact book' ? <Placeholder /> : ''}
     
   </div>
   );

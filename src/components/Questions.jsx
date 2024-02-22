@@ -5,13 +5,13 @@ function Questions(props) {
     const questions = questionsJSON.questions;
     const [isAnswered, setIsAnswered] = useState();
     const question = questions[props.questionIndex];
-    const progress = Math.round((props.questionIndex) / questions.length * 100);
+    props.setProgress(Math.round((props.questionIndex) / questions.length * 100));
     props.setQuizLenght(questions.length);
-    
+    const progress = props.progress;
     function onClickAnswerHandle(index) {
         if (isAnswered) {
             return;
-        } else if (question.correctAnswer == index) { 
+        } else if (question.correctAnswer === index) { 
             props.setresult(props.result + 1);
         }
         setIsAnswered(true);
@@ -20,15 +20,13 @@ function Questions(props) {
 
     return (
         <div className="questions">
-            <div className="questions-progressbar">
-                <div className="questions-progressbar-filler" style={{width: progress + '%'}}></div>
-            </div>
+            
             <div className="quiz-question">
                 <p className="quiz-question-text">{question.title}</p>
             </div>
             <ul className="quiz-answer-wrapper">
                 {question.answers.map((answer, index) => {
-                    if (index == question.correctAnswer) {
+                    if (index === question.correctAnswer) {
                         return (
                             <li className={`quiz-answer ${isAnswered? 'correct': ''}`} key={index} onClick={() => onClickAnswerHandle(index)}>
                                 {answer}
@@ -53,7 +51,7 @@ function Questions(props) {
                 if (props.questionIndex < questions.length - 1) {
                     props.setQuestionIndex(props.questionIndex + 1);
                 }
-                if (props.questionIndex == questions.length - 1) {
+                if (props.questionIndex === questions.length - 1) {
                     props.setIsFinnished(true);
                 }
                 setIsAnswered(false);
