@@ -83,6 +83,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+.app_wrapper .hero-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .app_wrapper .hero-text-box h1 {
   text-align: center;
   margin: 0;
@@ -267,7 +275,15 @@ body {
   transform: scale(1.1);
 }
 
-.quiz {
+.quiz-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.quiz-wrapper .quiz {
   height: 500px;
   width: 800px;
   background-color: var(--sidebar-background-color-main);
@@ -279,7 +295,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.quiz::after {
+.quiz-wrapper .quiz::after {
   content: "";
   position: absolute;
   display: block;
@@ -292,7 +308,7 @@ body {
   border-radius: 15px;
   z-index: -1;
 }
-.quiz::before {
+.quiz-wrapper .quiz::before {
   content: "";
   position: absolute;
   display: block;
@@ -305,7 +321,7 @@ body {
   border-radius: 15px;
   z-index: -2;
 }
-.quiz .questions-progressbar {
+.quiz-wrapper .quiz .questions-progressbar {
   width: 80%;
   height: 10px;
   margin-top: 50px;
@@ -313,7 +329,7 @@ body {
   border-radius: 5px;
   position: relative;
 }
-.quiz .questions-progressbar-filler {
+.quiz-wrapper .quiz .questions-progressbar-filler {
   position: absolute;
   top: 0;
   left: 0;
@@ -322,7 +338,7 @@ body {
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
-.quiz .questions {
+.quiz-wrapper .quiz .questions {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -330,7 +346,7 @@ body {
   width: 100%;
   height: 100%;
 }
-.quiz .questions-next-button {
+.quiz-wrapper .quiz .questions-next-button {
   width: 150px;
   height: 50px;
   border-radius: 5px;
@@ -339,20 +355,20 @@ body {
   margin: 0;
   transition: all 0.15s ease-in-out;
 }
-.quiz .questions-next-button:hover {
+.quiz-wrapper .quiz .questions-next-button:hover {
   cursor: pointer;
   background: var(--accent-color);
   color: white;
   transform: scale(1.05);
 }
-.quiz-question-text {
+.quiz-wrapper .quiz-question-text {
   font-size: 1.2rem;
   text-align: center;
   max-width: 80%;
   font-weight: 600;
   margin: 0 auto;
 }
-.quiz-answer-wrapper {
+.quiz-wrapper .quiz-answer-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -360,7 +376,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.quiz-answer-wrapper .quiz-answer {
+.quiz-wrapper .quiz-answer-wrapper .quiz-answer {
   list-style-type: none;
   width: 100%;
   padding: 10px;
@@ -370,23 +386,23 @@ body {
   border-radius: 5px;
   transition: all 0.15s ease-in-out;
 }
-.quiz-answer-wrapper .quiz-answer:hover {
+.quiz-wrapper .quiz-answer-wrapper .quiz-answer:hover {
   cursor: pointer;
   background: var(--accent-color);
   color: white;
   transform: scale(1.02);
 }
-.quiz-answer-wrapper .quiz-answer.correct {
+.quiz-wrapper .quiz-answer-wrapper .quiz-answer.correct {
   background: rgba(0, 128, 0, 0.9);
   color: white;
   border: none;
 }
-.quiz-answer-wrapper .quiz-answer.incorrect {
+.quiz-wrapper .quiz-answer-wrapper .quiz-answer.incorrect {
   background: rgba(255, 0, 0, 0.9);
   color: white;
   border: none;
 }
-.quiz .result {
+.quiz-wrapper .quiz .result {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -394,20 +410,20 @@ body {
   width: 100%;
   height: 100%;
 }
-.quiz .result-congr {
+.quiz-wrapper .quiz .result-congr {
   font-size: 1.2rem;
   margin: 0;
 }
-.quiz .result-text {
+.quiz-wrapper .quiz .result-text {
   font-size: 0.7rem;
   margin: 0;
 }
-.quiz .result-image {
+.quiz-wrapper .quiz .result-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
-.quiz .result-button {
+.quiz-wrapper .quiz .result-button {
   width: 150px;
   height: 50px;
   border-radius: 5px;
@@ -416,7 +432,7 @@ body {
   margin: 0;
   transition: all 0.15s ease-in-out;
 }
-.quiz .result-button:hover {
+.quiz-wrapper .quiz .result-button:hover {
   cursor: pointer;
   background: var(--accent-color);
   color: white;

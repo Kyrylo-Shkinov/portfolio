@@ -6,6 +6,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .hero-wrapper{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .hero-text-box{
         h1 {
             text-align: center;

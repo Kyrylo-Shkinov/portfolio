@@ -4,7 +4,8 @@ import burger from '../img/burger.svg';
 import Menu from "./Menu";
 
 function Sidebar(props) {
-    const [showMenu, setShowMenu] = useState(false);
+    const showMenu = props.showMenu;
+    const setShowMenu = props.setShowMenu;
     const setHideMenu = () => {
         setShowMenu(false);
     }

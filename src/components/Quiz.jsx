@@ -11,15 +11,15 @@ function Quiz() {
     
 
     return (
-        <div className="quiz">
-            <div className="questions-progressbar">
-                <div className="questions-progressbar-filler" style={{width: progress + '%'}}></div>
+        <div className="quiz-wrapper">
+            <div className="quiz">
+                <div className="questions-progressbar">
+                    <div className="questions-progressbar-filler" style={{width: progress + '%'}}></div>
+                </div>
+                {isFinnished ?
+                    <Result result={result} quizLenght={quizLenght} setresult={setresult} setIsFinnished={setIsFinnished} setQuestionIndex={setQuestionIndex} setProgress={setProgress}/> :
+                    <Questions setIsFinnished={setIsFinnished} setQuizLenght={setQuizLenght} setresult={setresult} result={result} setQuestionIndex={setQuestionIndex} questionIndex={questionIndex} setProgress={setProgress} progress={progress} />}
             </div>
-            {isFinnished ?
-                <Result result={result} quizLenght={quizLenght} setresult={setresult} setIsFinnished={setIsFinnished} setQuestionIndex={setQuestionIndex} setProgress={setProgress}/> :
-                <Questions setIsFinnished={setIsFinnished} setQuizLenght={setQuizLenght} setresult={setresult} result={result} setQuestionIndex={setQuestionIndex} questionIndex={questionIndex} setProgress={setProgress} progress={progress} />}
-            
-
         </div>
     );
 }
