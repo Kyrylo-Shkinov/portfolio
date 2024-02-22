@@ -28,8 +28,8 @@ const DotContainer = () => {
     const initialDots = useMemo(() => {
         let dots = [];
         const { width, height } = windowSize;
-        for (let i = 0; i < width; i += 40) {
-            for (let j = 0; j < height; j += 40) {
+        for (let i = 0; i < width; i += 20) {
+            for (let j = 0; j < height; j += 20) {
                 dots.push({ x: i, y: j, baseX: i, baseY: j, id: `${j}${i}${j}`, inRange: false, });
             }
         }
@@ -76,7 +76,7 @@ const DotContainer = () => {
             <svg style={{ position: 'absolute', height: '100%', width: '100%' }}>
                 {dots.map((dot, index) => {
                     const nextDot = dots[index + 1];
-                    const nextHorisontalDot = dots[index + Math.floor(windowSize.height / 40) + 1];
+                    const nextHorisontalDot = dots[index + Math.floor(windowSize.height / 20) + 1];
                     const lines = [];
 
                     if (nextDot) {
