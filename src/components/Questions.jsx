@@ -7,7 +7,6 @@ function Questions(props) {
     const question = questions[props.questionIndex];
     props.setProgress(Math.round((props.questionIndex) / questions.length * 100));
     props.setQuizLenght(questions.length);
-    const progress = props.progress;
     function onClickAnswerHandle(index) {
         if (isAnswered) {
             return;

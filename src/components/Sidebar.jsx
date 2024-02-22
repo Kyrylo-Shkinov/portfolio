@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from '../img/logo.svg';
 import burger from '../img/burger.svg';
 import Menu from "./Menu";

@@ -1,6 +1,5 @@
 import React from "react";
-function MainPage(props) {
-  const setShowMenu = props.setShowMenu;
+function MainPage() {
     return (
       <div className="hero-wrapper">
         <div className="hero-text-box">
