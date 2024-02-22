@@ -7,8 +7,10 @@
     background: var(--sidebar-background-color-main);
     transition: all 0.3s ease-in-out;
     z-index: 1000;
+    box-shadow: 0px 0 20px rgba(0, 0, 0, .2);
     &.hidden {
         right: -250px;
+        box-shadow: none;
     }
     .sidebar-wrapper {
         height: 100%;

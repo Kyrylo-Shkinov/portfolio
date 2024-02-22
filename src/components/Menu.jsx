@@ -9,10 +9,13 @@ function Menu(props) {
     }
     return (
         <div className="menu-wrapper">
+            <div className="menu-header">
+                <p className="menu-header-text">Menu</p>
+            </div>
             <ul className="menu-list">
                 <li className="menu-item" onClick={onClickMenuItemHandler}>Main</li>
-                <li className="menu-item" onClick={onClickMenuItemHandler}>Quiz</li>
                 <li className="menu-item" onClick={onClickMenuItemHandler}>Counter</li>
+                <li className="menu-item" onClick={onClickMenuItemHandler}>Quiz</li>
                 <li className="menu-item" onClick={onClickMenuItemHandler}>Pointer</li>
                 <li className="menu-item" onClick={onClickMenuItemHandler}>Contact book</li>
             </ul>

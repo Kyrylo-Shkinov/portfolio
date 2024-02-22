@@ -22,23 +22,23 @@
         },
         {
             "id": 3,
-            "title": "Have I used Redux in my React projects?",
+            "title": "Have I used preprocessors in my projects?",
             "answers": [
                 "Yes",
                 "No",
                 "Sometimes"
             ],
-            "correctAnswer": 1
+            "correctAnswer": 0
         },
         {
             "id": 4,
-            "title": "What testing libraries have I used in my React projects?",
+            "title": "What preprocessor am I using?",
             "answers": [
-                "Jest",
-                "Mocha",
-                "None"
+                "Stylus",
+                "SASS",
+                "Less"
             ],
-            "correctAnswer": 2
+            "correctAnswer": 1
         },
         {
             "id": 5,
@@ -52,13 +52,13 @@
         },
         {
             "id": 6,
-            "title": "What is the most challenging part of working with React?",
+            "title": "What is the most challenging part of working with React for me?",
             "answers": [
                 "State management",
                 "Performance optimization",
                 "Learning"
             ],
-            "correctAnswer": 2
+            "correctAnswer": 1
         },
         {
             "id": 7,
@@ -66,9 +66,9 @@
             "answers": [
                 "Reusable components",
                 "Performance optimization",
-                "Learning new things"
+                "State management"
             ],
-            "correctAnswer": 2
+            "correctAnswer": 0
         }
     ]
 }
