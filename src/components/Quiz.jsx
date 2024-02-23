@@ -33,7 +33,7 @@ function Quiz() {
                     <h3 className="modal-quiz-title">Quiz</h3>
                     <p className="modal-quiz-text">This is a little quiz about my experience with React. Here work with useState is greater than in counter.
                         <br /><span>Usage:</span> Answer the question by clicking one of the three options. After clicking, you will immediately see the correct answer, and after the last question - the final result. To go to the next question - press the button <span>"Next Question!"</span></p>
-                        <button className="modal-close" onClick={onClickHideModal}>Close</button>
+                        <button className="modal-close" onClick={onClickHideModal}>Let`s see</button>
                 </div>
             </div> : ''
             }
