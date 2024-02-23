@@ -17,12 +17,14 @@ body{
         background: rgba(0, 0, 0, 0.8);
         z-index: 5;
         position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        animation: .5s ease-in-out 0s 1 grayIn;
     }
     .modal{
+        animation: .5s ease-in-out 0s 1 modalIn;
         position: absolute;
         max-width: 95%;
         max-height: 95%;
@@ -81,5 +83,24 @@ body{
                 }
                 
         }
+    }
+}
+
+@keyframes modalIn {
+    from {
+        top: 150%;
+    }
+
+    to {
+        top: 50%;
+    }
+}
+@keyframes grayIn {
+    from {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.8);
     }
 }

@@ -5,6 +5,7 @@ import MainPage from "./MainPage";
 import Quiz from "./Quiz";
 import Placeholder from "./Placeholder";
 import Pointer from "./Pointer";
+import Converter from "./Converter";
 
 
 function Hero() {
@@ -32,7 +33,7 @@ function Hero() {
         {page === 'Quiz' ? <Quiz /> : ''}
         {page === 'Animation' ? <Pointer /> : ''}
         {page === 'Contact book' ? <Placeholder /> : ''}
-        {page === 'Converter' ? <Placeholder /> : ''}
+        {page === 'Converter' ? <Converter /> : ''}
     
       </div>
     </>
