@@ -18,6 +18,7 @@ function Menu(props) {
                 <li className="menu-item" onClick={onClickMenuItemHandler}>Quiz</li>
                 <li className="menu-item" onClick={onClickMenuItemHandler}>Pointer</li>
                 <li className="menu-item" onClick={onClickMenuItemHandler}>Contact book</li>
+                <li className="menu-item" onClick={onClickMenuItemHandler}>Converter</li>
             </ul>
             <div className="real_projects">
                 <p className="real_projects_title">Real Projects</p>

@@ -32,6 +32,7 @@ function Hero() {
         {page === 'Quiz' ? <Quiz /> : ''}
         {page === 'Pointer' ? <Pointer /> : ''}
         {page === 'Contact book' ? <Placeholder /> : ''}
+        {page === 'Converter' ? <Placeholder /> : ''}
     
       </div>
       </>
