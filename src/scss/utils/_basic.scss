@@ -12,8 +12,16 @@ body{
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.8); 
     z-index: 5;
+    &-gray{
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 5;
+        position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+    }
     .modal{
         position: absolute;
         max-width: 80%;

@@ -21,8 +21,16 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 5;
+}
+.undermodal-gray {
   background: rgba(0, 0, 0, 0.8);
   z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 }
 .undermodal .modal {
   position: absolute;

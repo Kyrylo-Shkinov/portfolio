@@ -27,7 +27,8 @@ function Quiz() {
                 </div>
             </div>
             {
-                showModal ? <div className="undermodal" onClick={onClickHideModal}>
+                showModal ? <div className="undermodal">
+                    <div className="undermodal-gray"onClick={onClickHideModal}></div>
                 <div className="modal">
                     <h3 className="modal-quiz-title">Quiz</h3>
                     <p className="modal-quiz-text">This is a little quiz about my experience with React. Here, work with useState is greater than in counter.

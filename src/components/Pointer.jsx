@@ -103,7 +103,8 @@ const DotContainer = () => {
             </svg>
             </div>
         {
-                showModal ? <div className="undermodal" onClick={onClickHideModal}>
+                showModal ? <div className="undermodal">
+                    <div className="undermodal-gray"onClick={onClickHideModal}></div>
                 <div className="modal">
                     <h3 className="modal-pointer-title">Grid Animation</h3>
                     <p className="modal-pointer-text">This is a dot grid animation. Here I created a <span>state with dots</span> (they are created exactly to fit on the screen). And also I generate <span>svg-lines</span> between these points. <br />I ran into an <span>optimization issue </span>here, and this part of the project is still under-optimized (in my opinion).
