@@ -499,7 +499,7 @@ body {
 }
 .quiz-wrapper .quiz-answer-wrapper .quiz-answer {
   list-style-type: none;
-  width: 100%;
+  width: calc(100% - 40px);
   padding: 10px;
   margin: 5px;
   font-size: 0.7rem;
