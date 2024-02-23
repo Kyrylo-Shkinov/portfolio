@@ -1,6 +1,9 @@
 @media screen and (max-width: 850px) {
     .quiz{
         width: 80% !important;
+        &-answer{
+            width: calc(100% - 40px) !important;
+        }
     }
     .counter-wrapper{
         width: 80% !important;
@@ -11,5 +14,17 @@
     }
     .quiz-wrapper .quiz-question-text{
         font-size: 1rem !important;
+    }
+    .converter-form{
+        flex-direction: column;
+    }
+    .converter-swap{
+        top: calc(50% + 1.2rem) !important;
+    }
+    .converter-form-box{
+        margin: 0 50px 50px 50px !important;
+    }
+    .converter-numbers-text{
+        margin: 15px 0 !important;
     }
 }

@@ -8,7 +8,7 @@ import Pointer from "./Pointer";
 import Converter from "./Converter";
 
 
-function Hero() {
+function Hero(props) {
   const [showMenu, setShowMenu] = useState(false);
   const [appState, setAppState] = useState(() => {
         const storedState = localStorage.getItem('appState');
@@ -32,8 +32,8 @@ function Hero() {
         {page === 'Counter' ? <Counter /> : ''}
         {page === 'Quiz' ? <Quiz /> : ''}
         {page === 'Animation' ? <Pointer /> : ''}
+        {page === 'Converter' ? <Converter storedCurrency={props.storedCurrency} /> : ''}
         {page === 'Contact book' ? <Placeholder /> : ''}
-        {page === 'Converter' ? <Converter /> : ''}
     
       </div>
     </>

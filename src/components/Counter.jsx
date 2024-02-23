@@ -24,7 +24,7 @@ function Counter() {
                     <div className="undermodal-gray"onClick={onClickHideModal}></div>
                 <div className="modal">
                     <h3 className="modal-counter-title">Counter</h3>
-                    <p className="modal-counter-text">This is a basic example of using "useState" in a React project. And this part took me the least amount of time. <br /> <span> Usage:</span> everything is simple here. Just click <span> "+" </span>and the number increases, click <span>"-"</span> and the number decreases. The RESET button, as you might guess, resets the number to 0.</p>
+                    <p className="modal-counter-text">This is a basic example of using "State" in a React project. And this part took me the least amount of time. <br /> <span> Usage:</span> everything is simple here. Just click <span> "+" </span>and the number increases, click <span>"-"</span> and the number decreases. The RESET button, as you might guess, resets the number to 0.</p>
                         <button className="modal-close" onClick={onClickHideModal}>Let`s see</button>
                 </div>
             </div> : ''
