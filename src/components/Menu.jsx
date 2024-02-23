@@ -35,9 +35,9 @@ function Menu(props) {
         </div>
         {
                 showModal ? <><div className="undermodal" >
-                    <div className="undermodal-gray"onClick={onClickHideModal}></div>
-                    <div className="modal" onClick={onClickDontHideModal}>
-                    <div className="modal-close-christ"></div>
+                    <div className="undermodal-gray" onClick={onClickHideModal}></div>
+                    <div className="modal">
+                    <div className="modal-close-christ" onClick={onClickHideModal}></div>
                     <h3 className="modal-link-title">Humanitarian Office page</h3>
                     <p className="modal-link-text">This is the project that started my study of React. In 2022, I started very actively engaged in humanitarian work in this office, and one of the needs was the creation of a site for partners. So I took up this job while also learning a new technology for me. This site is rarely updated, but it means a lot to me.
 <br />Here I use basic principles, API requests and a library
