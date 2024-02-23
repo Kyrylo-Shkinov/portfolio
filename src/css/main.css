@@ -34,8 +34,8 @@ body {
 }
 .undermodal .modal {
   position: absolute;
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 95%;
+  max-height: 95%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -98,6 +98,9 @@ body {
   }
   .counter-wrapper {
     width: 80% !important;
+  }
+  .modal {
+    font-size: 18px;
   }
 }
 .sidebar {
