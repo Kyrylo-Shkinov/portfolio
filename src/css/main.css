@@ -101,6 +101,7 @@ body {
   }
   .modal {
     font-size: 18px;
+    width: calc(95% - 60px);
   }
 }
 .sidebar {
