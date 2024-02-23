@@ -94,3 +94,19 @@
     }
 }
 
+.modal-link-title {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+}
+
+.modal-link-text {
+    margin: 0;
+    padding: 25px;
+    font-size: .7em;
+
+    span {
+        font-weight: 600;
+    }
+}

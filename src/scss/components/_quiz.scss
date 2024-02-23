@@ -184,3 +184,19 @@
             }
         }
 }
+.modal-quiz-title {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+}
+
+.modal-quiz-text {
+    margin: 0;
+    padding: 25px;
+    font-size: .8em;
+
+    span {
+        font-weight: 600;
+    }
+}

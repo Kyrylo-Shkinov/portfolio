@@ -3,6 +3,10 @@ import Dot from './Dot';
 import Line from './Line';
 
 const DotContainer = () => {
+    const [showModal, setShowModal] = useState(true);
+    function onClickHideModal () {
+        setShowModal(false);
+    };
     
 
     const [windowSize, setWindowSize] = useState({
@@ -64,6 +68,7 @@ const DotContainer = () => {
     }, [dots]);
 
     return (
+        <>
         <div
             className='pointer-wrapper'
             onMouseMove={handleMouseMove}
@@ -96,7 +101,18 @@ const DotContainer = () => {
                     return lines.length > 0 ? lines : null;
                 })}
             </svg>
-        </div>
+            </div>
+        {
+                showModal ? <div className="undermodal" onClick={onClickHideModal}>
+                <div className="modal">
+                    <h3 className="modal-pointer-title">Grid Animation</h3>
+                    <p className="modal-pointer-text">This is a dot grid animation. Here I created a <span>state with dots</span> (they are created exactly to fit on the screen). And also I generate <span>svg-lines</span> between these points. <br />I ran into an <span>optimization issue </span>here, and this part of the project is still under-optimized (in my opinion).
+                        <br /><span>Use:</span> just <span>move the mouse</span> on the screen. (if you use a phone - click in different places on the screen)</p>
+                        <button className="modal-close" onClick={onClickHideModal}>Close</button>
+                </div>
+            </div> : ''
+            }
+        </>
     );
 };
 

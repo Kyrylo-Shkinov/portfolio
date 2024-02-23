@@ -30,12 +30,12 @@ function Hero() {
         {page==='Main' ? <MainPage/> : ''}
         {page === 'Counter' ? <Counter /> : ''}
         {page === 'Quiz' ? <Quiz /> : ''}
-        {page === 'Pointer' ? <Pointer /> : ''}
+        {page === 'Animation' ? <Pointer /> : ''}
         {page === 'Contact book' ? <Placeholder /> : ''}
         {page === 'Converter' ? <Placeholder /> : ''}
     
       </div>
-      </>
+    </>
   );
 }
 
