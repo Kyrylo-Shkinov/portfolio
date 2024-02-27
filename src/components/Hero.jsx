@@ -33,7 +33,7 @@ function Hero(props) {
         {page === 'Quiz' ? <Quiz /> : ''}
         {page === 'Animation' ? <Pointer /> : ''}
         {page === 'Converter' ? <Converter storedCurrency={props.storedCurrency} /> : ''}
-        {page === 'Contact book' ? <Placeholder /> : ''}
+        {page === 'About Me' ? <Placeholder /> : ''}
     
       </div>
     </>
