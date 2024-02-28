@@ -22,12 +22,12 @@ function Menu(props) {
                 <p className="menu-header-text">Pages</p>
             </div>
             <ul className="menu-list">
-                    <li className="menu-item" onClick={onClickMenuItemHandler}><a href="/portfolio/">Main</a></li>
-                <li className="menu-item" onClick={onClickMenuItemHandler}><a href="/portfolio/counter">Counter</a></li>
-                <li className="menu-item" onClick={onClickMenuItemHandler}><a href="/portfolio/quiz">Quiz</a></li>
-                <li className="menu-item" onClick={onClickMenuItemHandler}><a href="/portfolio/pointer">Animation</a></li>
-                <li className="menu-item" onClick={onClickMenuItemHandler}><a href="/portfolio/converter">Converter</a></li>
-                <li className="menu-item" onClick={onClickMenuItemHandler}><a href="/portfolio/about">About Me</a></li>
+                <a href="/portfolio/"><li className="menu-item" onClick={onClickMenuItemHandler}>Main</li></a>
+                <a href="/portfolio/counter"><li className="menu-item" onClick={onClickMenuItemHandler}>Counter</li></a>
+                <a href="/portfolio/quiz"><li className="menu-item" onClick={onClickMenuItemHandler}>Quiz</li></a>
+                <a href="/portfolio/pointer"><li className="menu-item" onClick={onClickMenuItemHandler}>Animation</li></a>
+                <a href="/portfolio/converter"><li className="menu-item" onClick={onClickMenuItemHandler}>Converter</li></a>
+                <a href="/portfolio/about"><li className="menu-item" onClick={onClickMenuItemHandler}>About Me</li></a>
             </ul>
             <div className="real_projects">
                 <p className="real_projects_title">Real Projects</p>
