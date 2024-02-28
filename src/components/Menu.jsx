@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 function Menu(props) { 
     const [showModal, setShowModal] = useState(false);
     function onClickHideModal () {
@@ -21,12 +22,12 @@ function Menu(props) {
                 <p className="menu-header-text">Pages</p>
             </div>
             <ul className="menu-list">
-                <li className="menu-item" onClick={onClickMenuItemHandler}>Main</li>
-                <li className="menu-item" onClick={onClickMenuItemHandler}>Counter</li>
-                <li className="menu-item" onClick={onClickMenuItemHandler}>Quiz</li>
-                <li className="menu-item" onClick={onClickMenuItemHandler}>Animation</li>
-                <li className="menu-item" onClick={onClickMenuItemHandler}>Converter</li>
-                <li className="menu-item" onClick={onClickMenuItemHandler}>About Me</li>
+                    <li className="menu-item" onClick={onClickMenuItemHandler}><a href="/portfolio/">Main</a></li>
+                <li className="menu-item" onClick={onClickMenuItemHandler}><a href="/portfolio/counter">Counter</a></li>
+                <li className="menu-item" onClick={onClickMenuItemHandler}><a href="/portfolio/quiz">Quiz</a></li>
+                <li className="menu-item" onClick={onClickMenuItemHandler}><a href="/portfolio/pointer">Animation</a></li>
+                <li className="menu-item" onClick={onClickMenuItemHandler}><a href="/portfolio/converter">Converter</a></li>
+                <li className="menu-item" onClick={onClickMenuItemHandler}><a href="/portfolio/about">About Me</a></li>
             </ul>
             <div className="real_projects">
                 <p className="real_projects_title">Real Projects</p>

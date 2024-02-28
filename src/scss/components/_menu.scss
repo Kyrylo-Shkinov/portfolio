@@ -34,6 +34,10 @@
             text-decoration: none;
             padding: 7.5px 15px;
             position: relative;
+            a{
+                text-decoration: none;
+                color: black;
+            }
             &::after {
                     content: '';
                     display: block;

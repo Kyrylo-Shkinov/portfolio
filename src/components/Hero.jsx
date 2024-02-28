@@ -6,6 +6,10 @@ import Quiz from "./Quiz";
 import Placeholder from "./Placeholder";
 import Pointer from "./Pointer";
 import Converter from "./Converter";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
 
 function Hero(props) {
@@ -21,20 +25,43 @@ function Hero(props) {
     useEffect(() => {
         localStorage.setItem('appState', JSON.stringify(appState));
     }, [appState]);
-    const [page, setPage] = useState(appState);
+  const [page, setPage] = useState(appState);
+  const router = createBrowserRouter([
+    {
+      path: "/portfolio/",
+      element: <MainPage />,
+    },
+    {
+      path: "/portfolio/counter",
+      element: <Counter />,
+    },
+    {
+      path: "/portfolio/quiz",
+      element: <Quiz />,
+    },
+    {
+      path: "/portfolio/pointer",
+      element: <Pointer />,
+    },
+    {
+      path: "/portfolio/converter",
+      element: <Converter storedCurrency={props.storedCurrency} />,
+    },
+    {
+      path: "/portfolio/about",
+      element: <Placeholder />,
+    },
+]);
+
+
+
+
 
   return (
     <>
       <Sidebar setPage={setPage} setAppState={setAppState} showMenu={showMenu} setShowMenu={setShowMenu} />
       <div className='app_wrapper' onClick={onClickCloseMenu} >
-        
-        {page==='Main' ? <MainPage/> : ''}
-        {page === 'Counter' ? <Counter /> : ''}
-        {page === 'Quiz' ? <Quiz /> : ''}
-        {page === 'Animation' ? <Pointer /> : ''}
-        {page === 'Converter' ? <Converter storedCurrency={props.storedCurrency} /> : ''}
-        {page === 'About Me' ? <Placeholder /> : ''}
-    
+        <RouterProvider router={router} />
       </div>
     </>
   );
