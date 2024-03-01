@@ -813,6 +813,9 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 0.7rem;
   margin: 0;
 }
+.cv-objective-text .bold {
+  font-weight: 600;
+}
 .cv-link {
   color: black !important;
 }/*# sourceMappingURL=main.css.map */
