@@ -1,7 +1,7 @@
 import React from "react";
 import profileImg from "../img/profile-pic.png";
 import Typed from 'typed.js';
-
+import cvImg from '../img/resume.svg';
 function Cv() {
     const el = React.useRef(null);
     React.useEffect(() => {
@@ -27,6 +27,12 @@ function Cv() {
                         <h1>Kyrylo Shkinov</h1>
                         <p className="cv-title-text-role">React Developer</p>
                     </div>
+                    <a href="https://drive.google.com/file/d/1zjvLK9q6O7Zid6Wy66Rabx6JCgo-3XHQ/view?usp=drive_link" download target="_blank">
+                        <div className="cv-download">
+                            <img src={cvImg} alt="" />
+                            <p className="cv-download-title">Download CV</p>
+                        </div>
+                    </a>
                 </div>
                 <div className="cv-objective">
                     <span className="cv-objective-text" ref={el}></span>

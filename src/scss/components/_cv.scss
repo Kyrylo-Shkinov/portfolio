@@ -5,15 +5,38 @@
 
     &-title{
         display: flex;
-        margin: 25px 25px 0;
+        margin: 25px 50px 0;
+        padding-right: 50px;
         justify-content: flex-start;
         align-items: center;
+        position: relative;
+        flex-wrap: wrap;
         &-photo{
             width: 150px;
             height: 150px;
-            margin-right: 25px;
+            margin-right: 50px;
             border-radius: 50%;
             background-color: var(--sidebar-background-color-main);
+        }
+        .cv-download{
+            position: absolute;
+            right: 25px;
+            top: 50px;
+            font-size: .5em;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all .1s ease-in-out;
+            &:hover{
+                transform: scale(1.05);
+            }
+
+            img{
+                height: 50px;
+                width: 50px;
+            }
         }
     }
     &-objective{
