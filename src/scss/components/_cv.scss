@@ -1,0 +1,31 @@
+.cv{
+    width: 90%;
+    border-radius: 15px;
+    background-color: white;
+
+    &-title{
+        display: flex;
+        margin: 25px 25px 0;
+        justify-content: flex-start;
+        align-items: center;
+        &-photo{
+            width: 150px;
+            height: 150px;
+            margin-right: 25px;
+            border-radius: 50%;
+            background-color: var(--sidebar-background-color-main);
+        }
+    }
+    &-objective{
+        margin: 25px;
+        &-text{
+
+            font-size: .7rem;
+            margin: 0;
+
+        }
+    }
+    &-link{
+        color: black !important;
+    }
+}

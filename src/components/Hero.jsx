@@ -6,6 +6,7 @@ import Quiz from "./Quiz";
 import Placeholder from "./Placeholder";
 import Pointer from "./Pointer";
 import Converter from "./Converter";
+import Cv from "./Cv";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -49,7 +50,7 @@ function Hero(props) {
     },
     {
       path: "/portfolio/about",
-      element: <Placeholder />,
+      element: <Cv />,
     },
 ]);
 
@@ -60,7 +61,7 @@ function Hero(props) {
   return (
     <>
       <Sidebar setPage={setPage} setAppState={setAppState} showMenu={showMenu} setShowMenu={setShowMenu} />
-      <div className='app_wrapper' onClick={onClickCloseMenu} >
+      <div className={`app_wrapper`} onClick={onClickCloseMenu} >
         <RouterProvider router={router} />
       </div>
     </>

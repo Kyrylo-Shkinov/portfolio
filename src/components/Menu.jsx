@@ -5,9 +5,6 @@ function Menu(props) {
     function onClickHideModal () {
         setShowModal(false);
     };
-    function onClickDontHideModal () {
-        setShowModal(true);
-    };
 
     const onClickMenuItemHandler = (event) => {
         props.setHideMenu();
@@ -25,7 +22,7 @@ function Menu(props) {
                 <a href="/portfolio/"><li className="menu-item" onClick={onClickMenuItemHandler}>Main</li></a>
                 <a href="/portfolio/counter"><li className="menu-item" onClick={onClickMenuItemHandler}>Counter</li></a>
                 <a href="/portfolio/quiz"><li className="menu-item" onClick={onClickMenuItemHandler}>Quiz</li></a>
-                <a href="/portfolio/pointer"><li className="menu-item" onClick={onClickMenuItemHandler}>Animation</li></a>
+                <a href="/portfolio/pointer" onClick={onClickMenuItemHandler}><li className="menu-item" >Animation</li></a>
                 <a href="/portfolio/converter"><li className="menu-item" onClick={onClickMenuItemHandler}>Converter</li></a>
                 <a href="/portfolio/about"><li className="menu-item" onClick={onClickMenuItemHandler}>About Me</li></a>
             </ul>

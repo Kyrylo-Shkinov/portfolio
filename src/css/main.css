@@ -207,7 +207,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .app_wrapper {
   background: var(--main-color);
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -623,8 +623,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .pointer-wrapper {
-  height: 99%;
-  width: 99%;
+  height: 99vh;
+  width: 99vw;
   position: relative;
   z-index: 1;
   margin: auto;
@@ -786,4 +786,33 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .modal-converter-text span {
   font-weight: 600;
+}
+
+.cv {
+  width: 90%;
+  border-radius: 15px;
+  background-color: white;
+}
+.cv-title {
+  display: flex;
+  margin: 25px 25px 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cv-title-photo {
+  width: 150px;
+  height: 150px;
+  margin-right: 25px;
+  border-radius: 50%;
+  background-color: var(--sidebar-background-color-main);
+}
+.cv-objective {
+  margin: 25px;
+}
+.cv-objective-text {
+  font-size: 0.7rem;
+  margin: 0;
+}
+.cv-link {
+  color: black !important;
 }/*# sourceMappingURL=main.css.map */
