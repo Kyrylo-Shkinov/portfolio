@@ -53,11 +53,6 @@ function Hero(props) {
       element: <Cv />,
     },
 ]);
-
-
-
-
-
   return (
     <>
       <Sidebar setPage={setPage} setAppState={setAppState} showMenu={showMenu} setShowMenu={setShowMenu} />
