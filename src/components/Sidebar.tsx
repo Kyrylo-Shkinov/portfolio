@@ -1,15 +1,15 @@
 import React from "react";
-import logo from '../img/logo.svg';
-import burger from '../img/burger.svg';
 import Menu from "./Menu";
 
 function Sidebar(props) {
+    const logo = require("../img/logo.svg").default as string;
+    const burger = require("../img/burger.svg").default as string;
     const showMenu = props.showMenu;
     const setShowMenu = props.setShowMenu;
-    const setHideMenu = () => {
+    const setHideMenu = (): void => {
         setShowMenu(false);
     }
-    const onClickShowMenuToggle = () => {
+    const onClickShowMenuToggle = (): void => {
         setShowMenu(!showMenu);
     }
 

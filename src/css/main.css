@@ -169,8 +169,6 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   display: flex;
   flex-direction: column;
-}
-.sidebar .sidebar-wrapper img {
   transition: all 0.3s ease-in-out;
 }
 .sidebar .sidebar-wrapper .sidebar-close-button {
@@ -191,9 +189,11 @@ input[type=number]::-webkit-outer-spin-button {
   position: fixed;
   top: 15px;
   right: 15px;
+  transition: all 0.3s ease-in-out;
 }
 .sidebar .sidebar-wrapper .sidebar-burger.hidden {
-  transform: translate(100px, 0);
+  transform: translate(-256px, 0);
+  opacity: 0;
 }
 .sidebar .sidebar-wrapper .sidebar-burger:hover {
   cursor: pointer;

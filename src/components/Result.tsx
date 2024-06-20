@@ -1,7 +1,7 @@
 import React from "react";
-import image from '../img/resultat-image.svg';
 
 function Result(props) {
+    const image = require('../img/resultat-image.svg').default as string;
     props.setProgress(100);
 
 

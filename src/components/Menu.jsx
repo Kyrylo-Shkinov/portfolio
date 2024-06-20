@@ -16,7 +16,7 @@ function Menu(props) {
         <>
         <div className="menu-wrapper">
             <div className="menu-header">
-                <p className="menu-header-text">Pages</p>
+                <p className="menu-header-text">Navigation</p>
             </div>
             <ul className="menu-list">
                 <a href="/portfolio/"><li className="menu-item" onClick={onClickMenuItemHandler}>Main</li></a>
@@ -25,6 +25,8 @@ function Menu(props) {
                 <a href="/portfolio/pointer" onClick={onClickMenuItemHandler}><li className="menu-item" >Animation</li></a>
                 <a href="/portfolio/converter"><li className="menu-item" onClick={onClickMenuItemHandler}>Converter</li></a>
                 <a href="/portfolio/about"><li className="menu-item" onClick={onClickMenuItemHandler}>About Me</li></a>
+                <a href="https://github.com/Kyrylo-Shkinov/github-issues-kanban" target="_blank"><li className="menu-item">Kanban Desk</li></a>    
+                
             </ul>
             <div className="real_projects">
                 <p className="real_projects_title">Real Projects</p>
